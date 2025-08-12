@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>LISTA</title>
+</head>
+<body>
+    <h1>lista de Descrição</h1>
+    <h3>Glossário de Pogramação</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>linguagem de Marcação de Hipertexto. Usada para estruturar o conteúdo de uma página web</dd>
+        <dt>CSS</dt>
+        <dd>Folha deoi Estilo em Cascata.Usada para estilizar a aparência de documentos Html</dd>
+    </dl>
+    
+</body>
+</html>
+
+
