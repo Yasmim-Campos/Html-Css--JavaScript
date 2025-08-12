@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista</title>
+    </head>
+    <boddy>
+        <h2>Lista n ordenada</h2>
+        <li>um</li>
+        <li>dois</li>
+        <li>tres</li>
+
+        <h2>lista ordenada</h2>
+        <ol type="a">
+            <li>um</li>
+            <li>dois</li>
+            <li>tres</li>
+        </ol>
+        <ol type="A">
+            <li>um</li>
+            <li>dois</li>
+            <li>tres</li>
+        </ol>
+        <ol type="i">
+            <li>um</li>
+            <li>dois</li>
+            <li>tres</li>
+            <li>pHp</li>
+        </ol>
+        <ol type="I">
+            <li>um</li>
+            <li>dois</li>
+            <li>tres</li>
+            <li>pHp</li>
+        </ol>
