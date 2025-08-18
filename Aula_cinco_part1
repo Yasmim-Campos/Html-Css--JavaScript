@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Css interno</title>
+    <meta charset="utf-8">
+    <html lang="pt-br">
+    <style>
+        h1{ 
+            color :rgb(230, 164, 175);
+            font-size: 1rem;
+
+        
+        }
+
+        p{
+            color:rgb(121, 7, 7)
+
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p> Css significa Folha de estilo e cascata e descreve como elementos devem ser exibidos na tela.<br/>
+        O Css economiza muito tempo, podem controlar o layout de uma só vez.</p>
+</body>
+
