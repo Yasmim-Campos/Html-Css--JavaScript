@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form>
+
+            <form name="form1" method="post" action="grava.jsp">
+                <!--Atravez do nome sabe o que o usario escreveu 
+                
+                OBS - N PODE TER ACENTO 
+                      N PODE COMEÇAR COM NUMERO TBM
+                      Post - para dados ocultos 
+                      action - vai mandar para o banco de dado com o nome do arquivo -->
+                <label for="txtnome">Nome:</label>
+                <input type="texto" id="txtnome" name="txtnome" maxlenght="5">
+                <br>
+                <label for="txtnumero"></label>Numero 
+                <input type="number" name="txtnumero">
+                <br>
+                <label for="txtsenha"></label>
+                <input type-="password" id="txtsenha" name="txtsenha">
+                <br>
+                <label for="txtmensagem">Mensagem:</label>
+                <textarea id="txtmensagem" name="txtmensagem" cols="30" rows="6"></textarea>
+                <br>
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado">
+                    <option value="SP">SAO PAULO</option>
+                     <option value="RJ">RIO DE JANEJIRO</option>
+                      <option value="BR">BRASIL</option>
+                </select>
+                <br>
+                Pagamento :
+                <input type="radio" name="pgto" value="A"> á vista 
+                <input type="radio" name="pgto" value="3"> 3x
+                <br>
+                Revista
+                <input type="checkbox" name="revista" value="indo">
+                <input type="checkbox" name="seja" value="indo">
+                <input type="checkbox" name="Exame" value="indo">
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">limpar</button>
+            
+        </form>
+    </body>
+</html>
