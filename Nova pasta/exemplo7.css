@@ -1,0 +1,18 @@
+h1{
+
+    color:rgb(255, 255, 255);
+    font-size: 30pt;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: rgb(236, 178, 224);
+    padding-right:20px;
+    
+    border-left-color:black;
+    border-left-style:solid ;
+    border-left-width: 15px;
+
+
+}
+
+
