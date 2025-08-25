@@ -1,0 +1,14 @@
+#esquerda {
+
+   background-color: rgb(92, 252, 0);
+   width: 45%;
+   height: 300px;
+   float :left
+}
+#direita {
+   
+   background-color: darkgreen;
+   width: 45%;
+   height: 300px;
+   float:right
+}
