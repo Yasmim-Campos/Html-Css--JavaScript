@@ -1,0 +1,33 @@
+#container1{
+
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    "cabecalho1 cabecalho1"
+    "esquerdo1 conteudo1"
+    "esquerdo1 rodape1";
+
+    grid-template-columns: 20% auto;
+    grid-template-rows: 120px 70vh 80px;
+}
+
+#cabecalho1{
+
+    grid-area:cabecalho1;
+    border: 1px gray dashed;
+}
+
+#esquerdo1 {
+    grid-area:esquerdo1;
+    border: 1px gray dashed;
+}
+
+#conteudo1 {
+    grid-area:conteudo1;
+    border: 1px gray dashed;
+}
+#rodape1{
+    grid-area:rodape1;
+    border: 1px gray dashed;
+}
