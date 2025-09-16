@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+</head>
+<body>
+    <button onclick="mostrar()">Mostrar Hash da URL</button>
+    <button onclick="definirCookie()">Definir Cookie</button>
+    <button onclick="apagarCookie()">Apagar cookie</button>
+    <button onclick="mostrarResolucao()">Mostra a Resolução da tela </button>
+    <button onclick="iniciarContador()">Iniciar Contador </button>
+
+    <p id="saida"></p>
+    <p id="Resolucao"></p>
+    <p id="contador"></p>
+
+
+    <script>
+
+        function iniciarContador(){
+            var contador = 0 ;
+            document.getElementById("contador").innerText ="Contando...";
+
+            intervalo=setInterval(() => {
+            contador++;
+            document.getElementById("contador").innerText ="segundos " + contador ;
+               }, 1000);
+            }
+
+
+
+
+
+        function mostrarResolucao(){
+            var largura = screen.width;
+            var altura = screen.height;
+            document.getElementById("Resolucao").innerText= "a resolução da tela é:" + largura + "X" + altura ;
+
+
+        }
+
+
+        function definirCookie(){
+           window.location.definirCookie="usuario=Nelson;max-age=3600" 
+           alert("cookie definido");
+        }
+
+        
+        function apagarCookie(){
+           window.location.definirCookie="usuario=;max-age=" 
+           alert("cookie excluido");
+        
+        }
+
+
+
+
+        function mostrar(){
+           var resultado = window.location.hash;
+           alert(resultado);
+           document.getElementById("saida").innerText= "hash " + resultado ;
+        }
+
+
+
+    </script>
+</body>
+</html>
