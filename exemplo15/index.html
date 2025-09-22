@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo_15</title>
+
+    <style>
+        span{
+
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="grava.jsp">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="txtnome">Nome:</label>
+            <input type="text" name="txtname" id="txtnome">
+            <span id="erronome"></span> <br>
+
+        
+            <label for="txtidade">Idade:</label>
+            <input type="text" name="txtidade" id="txtidade">
+            <span id="erroidade"></span> <br>
+
+            <label for="txtemail">Email:</label>
+            <input type="text" name="txtemail" id="txtemail">
+            <span id="erroemail"></span> <br>
+
+            <button type="button" onclick="verificar()">Enviar</button>
+            
+            
+        </fieldset>
+    </form>
+    <script>
+        function verificar(){
+           
+            var tudoCerto = true ;
+            var n=document.getElementById('txtnome').value;
+
+            if(n.length==0){
+                tudoCerto=false
+                document.getElementById('erronome').textContent="Coloque o nome";
+        
+            }
+
+            var i = document.getElementById('txtidade').value;
+            if(n.length==0 || isNaN(i)){
+                tudoCerto=false
+                document.getElementById('erroidade').textContent="Coloque a idade";
+            }
+            var e = document.getElementById('txtemail').value;
+            if(e.indexOf ("@") < 0 ){
+                tudoCerto=false
+                document.getElementById('erroemail').textContent="Coloque o email";
+            }
+
+            if (tudoCerto) {
+                document.form1.submit();
+            }
+        }
+
+    </script>
+</body>
+</html>
